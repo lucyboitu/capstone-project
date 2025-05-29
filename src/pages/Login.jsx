@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
+import api from '../api/axios'; 
 import { Link, useNavigate } from 'react-router-dom';
 import '../components/Form.css';
 
@@ -14,7 +15,7 @@ const handleSubmit = async e => {
   e.preventDefault();
   setError('');
   try {
-    const res = await axios.post('http://localhost:8081/api/auth/login', form);
+    const res = await api.post('http://localhost:8081/api/auth/login', form);
 
     localStorage.setItem('token', res.data.token);
     localStorage.setItem('user', JSON.stringify(res.data.user));
