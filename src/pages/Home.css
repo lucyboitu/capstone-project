@@ -1,0 +1,87 @@
+/* src/pages/Home.css */
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-item {
+  background: #fff;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.post-item:hover {
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.post-title {
+  margin: 0 0 0.5rem 0;
+  color: #0077cc;
+}
+
+.post-subtitle {
+  margin: 0 0 1rem 0;
+  color: #555;
+}
+
+.post-content {
+  color: #444;
+}
+.container, body, #root{
+  background-color: #f7f8f2;
+
+}
+.left-side, .right-side{
+  width: 50%;
+}
+.container{
+  display: flex;
+  width: 1600px;
+  height: 100vh;
+
+}
+.side-image{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+h1{
+  font-size: 70px;
+  font-weight: 600;
+    margin: 0;
+    line-height: 85px;
+}
+
+h3{
+  color: #2a2a2a;
+  font-weight: 200;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+ul li{
+  list-style: none;
+  border-bottom: 3px solid #000;
+  width: 80%;
+}
+ul{
+  margin: 0 0  60px 0;
+  padding: 0;
+}
+
+.left-side button{
+  background-color: #000;
+  color: #d4f674;
+  font-size: 18px;
+  border: none;
+  padding:15px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.posts p{
+  text-align: left;
+}
