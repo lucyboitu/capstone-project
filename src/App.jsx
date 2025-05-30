@@ -20,32 +20,24 @@ function App() {
   return (
     <Router>
       <NavBar />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
          <Route path="/post/:id" element={<ViewBlog />} />
-        
-        {/* Protect create-post route */}
-        <Route
-          path="/create-post"
-          element={
-            <ProtectedRoute>
+        <Route path="/create-post" element={
+        <ProtectedRoute>
               <CreatePost />
-            </ProtectedRoute>
+        </ProtectedRoute>
           }
         />
-              <Route
-  path="/edit-post/:id"
-  element={
-    <ProtectedRoute>
-      <EditPost />
-    </ProtectedRoute>
-  }
-/>
+        <Route path="/edit-post/:id" element={
+           <ProtectedRoute>
+           <EditPost />
+          </ProtectedRoute>
+          }
+        />
       </Routes>
-
     </Router>
   );
 }

@@ -1,0 +1,56 @@
+.view-blog  h2{
+    font-size:40px;
+    text-transform: capitalize;
+    margin: 0;
+
+}
+.view-blog  h4{
+    font-size:20px;
+    text-align: center;
+
+}
+.view-blog p{
+width: 780px;
+text-align: center;
+font-weight: 300;
+}
+.view-blog{
+    max-width: 780px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.view-blog p span{
+    font-weight: normal;
+}
+.view-blog img{
+
+    height: 350px;
+}
+.view-blog button{
+  font-size: 18px;
+  border: none;
+  padding:15px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-edit{
+ background-color: #d4f674;
+  color: #000000;
+}
+.btn-delete{
+background-color: #000000;
+color: #d4f674;
+}
+.button-group{
+     display: flex;
+  justify-content: flex-end;
+  gap: 10px; /* space between buttons */
+  margin-top: 20px;
+}
+
+.button-group button:hover {
+  opacity: 0.8;
+}

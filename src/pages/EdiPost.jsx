@@ -10,7 +10,7 @@ export default function EditPost() {
 
   useEffect(() => {
     axios.get(`http://localhost:8081/api/posts/${id}`)
-      .then(res => setForm({ title: res.data.title, content: res.data.content }))
+      .then(res => setForm({ title: res.data.title, subtitle: res.data.subtitle, content: res.data.content,image:res.data.image  }))
       .catch(err => console.error(err));
   }, [id]);
 
@@ -38,6 +38,13 @@ export default function EditPost() {
         placeholder="Title"
         required
       />
+        <input
+        name="subtitle"
+        value={form.subtitle}
+        onChange={handleChange}
+        placeholder="SubTitle"
+        required
+      />
       <textarea
         name="content"
         value={form.content}
@@ -45,6 +52,8 @@ export default function EditPost() {
         placeholder="Content"
         required
       />
+       <input type="file" onChange={handleChange} accept="image/*" />
+
       <button type="submit">Update</button>
     </form>
   );
