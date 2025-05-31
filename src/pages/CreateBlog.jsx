@@ -31,7 +31,7 @@ export default function CreateBlog() {
         },
       });
 
-      navigate('/'); // after creation, redirect to home
+      navigate('/'); 
     } catch (err) {
       setError(err.response?.data?.error || 'Failed to create post');
     }

@@ -42,12 +42,7 @@ export default function Home() {
         ))}
       </ul>
         <button onClick={handleCreatePostClick}>Create Post</button>
-        {!token && (
-        <div>
-          <button onClick={() => navigate('/login')}>Login</button>
-          <button onClick={() => navigate('/signup')}>Signup</button>
-        </div>
-      )}
+        
       </div>
       <div className="right-side">
         <div className='side-image'>

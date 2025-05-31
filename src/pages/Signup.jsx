@@ -16,7 +16,7 @@ export default function Signup() {
     setError('');
     try {
       await axios.post('http://localhost:8081/api/auth/signup', form);
-      navigate('/login');  // redirect to login after successful signup
+      navigate('/login');  
     } catch (err) {
       setError(err.response?.data?.error || 'Signup failed');
     }
